@@ -13,7 +13,8 @@ jobs:
   build-go:
     strategy:
       matrix:
-        cross_os: [ windows, linux, darwin ]
+        # cross_os: [ windows, linux, darwin ]
+        cross_os: [ darwin ]
         cross_arch: [ amd64 ]
         include:
           - cross_os: asset

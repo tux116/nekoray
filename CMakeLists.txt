@@ -258,6 +258,7 @@ set(MACOSX_ICON ${CMAKE_SOURCE_DIR}/res/nekoray.icns)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "Minimum OS X deployment version")
 
 if (APPLE)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "Minimum OS X deployment version")
     target_sources(nekoray PRIVATE ${MACOSX_ICON})
 endif ()
 
