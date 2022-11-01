@@ -176,9 +176,9 @@ jobs:
           mv ghr*linux_amd64/ghr .
           find . -name artifacts.tgz | xargs -n1 tar xvzf
           cd deployment
-          cp -r assets/* linux64
-          cp -r assets/* windows64
-          rm -rf assets *.pdb
+          # cp -r assets/* linux64
+          # cp -r assets/* windows64
+          # rm -rf assets *.pdb
           ####
           # mv linux64 nekoray
           # zip -r $version_standalone-linux64.zip nekoray
